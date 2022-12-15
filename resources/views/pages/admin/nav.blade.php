@@ -16,7 +16,7 @@
     </ul>
 
     <ul class="nav navbar-left navbar-top-links">
-       
+
         @auth
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -33,6 +33,11 @@
                                     <i class="fa fa-sign-out fa-fw"></i>
                                     خروج</button>
                             </form>
+                        </a>
+                        <a href="{{ route('profile.show') }}">
+                            <button class="btn btn-block btn-link" type="submit">
+                                <i class="fa fa-user fa-fw"></i>
+                                تعديل البيانات</button>
                         </a>
                     </li>
                 </ul>
@@ -115,11 +120,17 @@
                     <li>
                         <a href="{{ route('admin.admin.create') }}"><i class="fa fa-user-plus fa-fw"></i> مدير اضافي </a>
                     </li>
-                     <li>
-                    <a href="{{ route('messages.index') }}"><i class="fa fa-edit fa-fw"></i> الرسائل</a>
+{{--                     <li>--}}
+{{--                    <a href="{{ route('messages.index') }}"><i class="fa fa-edit fa-fw"></i> الرسائل</a>--}}
+{{--                </li>--}}
+{{--                 <li>--}}
+{{--                    <a href="{{ route('messages.create') }}"><i class="fa fa-edit fa-fw"></i> رسالة جديدة</a>--}}
+{{--                </li>--}}
+                <li>
+                    <a href="{{ url('chatify') }}"><i class="fa fa-edit fa-fw"></i> المحادثات</a>
                 </li>
-                 <li>
-                    <a href="{{ route('messages.create') }}"><i class="fa fa-edit fa-fw"></i> رسالة جديدة</a>
+                <li>
+                    <a href="{{ route('users.list') }}"><i class="fa fa-edit fa-fw"></i> إرسال رسالة</a>
                 </li>
 
                 <!-- /.nav-second-level -->

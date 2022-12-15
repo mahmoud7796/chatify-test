@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\ProfileController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -73,4 +74,13 @@ Route::middleware('auth')->group(function () {
         Route::resource('activity', Student\ActivityController::class, ['as' => 'student'])->except(['update', 'edit', 'show']);
         Route::resource('schedual', Student\SchedualController::class, ['as' => 'student'])->except(['update', 'edit', 'show']);
     });
+});
+
+Route::prefix('profile')->middleware('auth:web')->group(function () {
+    Route::get('/show', [ProfileController::class, 'show'])->name('profile.show');
+    Route::put('/update', [ProfileController::class, 'update'])->name('profile.update');
+});
+
+Route::prefix('users')->middleware('auth:web')->group(function () {
+    Route::get('/list', [ProfileController::class, 'listUsers'])->name('users.list');
 });

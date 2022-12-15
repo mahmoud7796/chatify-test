@@ -17,7 +17,7 @@
     </ul>
 
     <ul class="nav navbar-left navbar-top-links">
-      
+
 
         @auth
             <li class="dropdown">
@@ -35,6 +35,11 @@
                                     <i class="fa fa-sign-out fa-fw"></i>
                                     خروج</button>
                             </form>
+                        </a>
+                        <a href="{{ route('profile.show') }}">
+                            <button class="btn btn-block btn-link" type="submit">
+                                <i class="fa fa-user fa-fw"></i>
+                                تعديل البيانات</button>
                         </a>
                     </li>
                 </ul>

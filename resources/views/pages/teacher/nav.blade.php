@@ -85,6 +85,11 @@
                                     <i class="fa fa-sign-out fa-fw"></i>
                                     خروج</button>
                             </form>
+                            <a href="{{ route('profile.show') }}">
+                                <button class="btn btn-block btn-link" type="submit">
+                                    <i class="fa fa-user fa-fw"></i>
+                                    تعديل البيانات</button>
+                            </a>
                         </a>
                     </li>
                 </ul>
