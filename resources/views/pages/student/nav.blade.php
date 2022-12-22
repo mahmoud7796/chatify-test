@@ -28,6 +28,11 @@
                 </a>
                 <ul class="dropdown-menu bg-dark dropdown-user">
                     <li>
+                        <a href="{{ route('profile.show') }}">
+                            <button class="btn btn-block btn-link" type="submit">
+                                <i class="fa fa-user fa-fw"></i>
+                                تعديل البيانات</button>
+                        </a>
                         <a>
                             <form action="{{ route('logout') }}" method="POST">
                                 @CSRF
@@ -35,11 +40,6 @@
                                     <i class="fa fa-sign-out fa-fw"></i>
                                     خروج</button>
                             </form>
-                        </a>
-                        <a href="{{ route('profile.show') }}">
-                            <button class="btn btn-block btn-link" type="submit">
-                                <i class="fa fa-user fa-fw"></i>
-                                تعديل البيانات</button>
                         </a>
                     </li>
                 </ul>
@@ -66,6 +66,12 @@
 
                 <li>
                     <a href="{{ route('student.activity.index') }}"><i class="fa fa-edit fa-fw"></i> نشاطات</a>
+                </li>
+                <li>
+                    <a href="{{ route('users.list') }}"><i class="fa fa-edit fa-fw"></i> إرسال رسالة</a>
+                </li>
+                <li>
+                    <a href="{{ url('chatify') }}"><i class="fa fa-edit fa-fw"></i> المحادثات</a>
                 </li>
                 <!-- /.nav-second-level -->
             </ul>

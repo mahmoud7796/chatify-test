@@ -3,11 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="0af2aaf7-c068-4baf-bf8b-81ea53801ff0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProfileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/chatify.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/chatify.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/listUsers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/listUsers.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/admin/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/admin/nav.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/student/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/student/nav.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/teacher/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/teacher/nav.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/debugbar/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/testing/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/public/homeworks/4p7Nh5eQXI1enJaxuVRSX2CcQf2mMOnotJiFeocG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/public/zQMLcT61fQaZTetQJls3KoZbgFx5CJseqe4QSRLv (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/users-avatar/avatar.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,16 +166,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/storage" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\cpanel\public\storage" />
-      <recent name="C:\cpanel\storage\users-avatar" />
+      <recent name="C:\cpanel\public\css" />
       <recent name="C:\cpanel\public" />
       <recent name="C:\cpanel\resources\views" />
-      <recent name="C:\cpanel\resources\views\pages" />
+      <recent name="C:\cpanel\storage\users-avatar" />
+      <recent name="C:\cpanel\public\storage" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\cpanel\storage\app" />
+      <recent name="C:\cpanel\public\storage" />
     </key>
   </component>
   <component name="RunManager">
@@ -179,12 +200,23 @@
       <workItem from="1671135852290" duration="154000" />
       <workItem from="1671136055070" duration="320000" />
       <workItem from="1671136471881" duration="2211000" />
-      <workItem from="1671145046686" duration="1473000" />
+      <workItem from="1671145046686" duration="3856000" />
+      <workItem from="1671149188570" duration="3942000" />
+      <workItem from="1671153333887" duration="2392000" />
+      <workItem from="1671182323998" duration="3024000" />
+      <workItem from="1671185578418" duration="3983000" />
+      <workItem from="1671190729706" duration="6428000" />
+      <workItem from="1671197458821" duration="1594000" />
+      <workItem from="1671283465693" duration="618000" />
+      <workItem from="1671728461019" duration="359000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

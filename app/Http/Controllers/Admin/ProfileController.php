@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\ChMessage;
 use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Http\Request;
 use Auth;
-use Illuminate\Support\Facades\Hash;
-
+use DB;
 class ProfileController extends Controller
 {
 
@@ -60,6 +60,25 @@ class ProfileController extends Controller
     {
         $users = User::all();
         return view('listUsers',compact('users'));
+    }
+
+    public function findConversation()
+    {
+        $users = User::all();
+        return view('findConversation',compact('users'));
+    }
+
+    public function showConversation(Request $request)
+    {
+        $conversations = ChMessage::where(function ($query) use ($request) {
+            $query->where('from_id', '=', $request->from_id)
+                ->where('to_id', '=', $request->to_id);
+        })->orWhere(function ($query) use ($request) {
+            $query->where('from_id', '=', $request->to_id)
+                ->where('to_id', '=', $request->from_id);
+        })->orderBy('created_at','ASC')->get();
+        $from= $request->from_id;
+        return view('showConversation',compact('conversations','from'));
     }
 
 }

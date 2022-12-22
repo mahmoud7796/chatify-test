@@ -26,6 +26,11 @@
                 </a>
                 <ul class="dropdown-menu bg-dark dropdown-user">
                     <li>
+                        <a href="{{ route('profile.show') }}">
+                            <button class="btn btn-block btn-link" type="submit">
+                                <i class="fa fa-user fa-fw"></i>
+                                تعديل البيانات</button>
+                        </a>
                         <a>
                             <form action="{{ route('logout') }}" method="POST">
                                 @CSRF
@@ -33,11 +38,6 @@
                                     <i class="fa fa-sign-out fa-fw"></i>
                                     خروج</button>
                             </form>
-                        </a>
-                        <a href="{{ route('profile.show') }}">
-                            <button class="btn btn-block btn-link" type="submit">
-                                <i class="fa fa-user fa-fw"></i>
-                                تعديل البيانات</button>
                         </a>
                     </li>
                 </ul>
@@ -127,10 +127,13 @@
 {{--                    <a href="{{ route('messages.create') }}"><i class="fa fa-edit fa-fw"></i> رسالة جديدة</a>--}}
 {{--                </li>--}}
                 <li>
+                    <a href="{{ route('users.list') }}"><i class="fa fa-edit fa-fw"></i> إرسال رسالة</a>
+                </li>
+                <li>
                     <a href="{{ url('chatify') }}"><i class="fa fa-edit fa-fw"></i> المحادثات</a>
                 </li>
                 <li>
-                    <a href="{{ route('users.list') }}"><i class="fa fa-edit fa-fw"></i> إرسال رسالة</a>
+                    <a href="{{ route('find.conversation') }}"><i class="fa fa-edit fa-fw"></i>بحث عن محادثة </a>
                 </li>
 
                 <!-- /.nav-second-level -->

@@ -83,4 +83,8 @@ Route::prefix('profile')->middleware('auth:web')->group(function () {
 
 Route::prefix('users')->middleware('auth:web')->group(function () {
     Route::get('/list', [ProfileController::class, 'listUsers'])->name('users.list');
+    Route::get('/find/conversation', [ProfileController::class, 'findConversation'])->name('find.conversation');
+    Route::post('show/conversation', [ProfileController::class, 'showConversation'])->name('conversation.show');
 });
+
+

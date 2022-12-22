@@ -39,7 +39,7 @@
                                                     <div class="candidate-list-details" style="margin-right: 15px">
                                                         <div class="candidate-list-info">
                                                             <div class="candidate-list-title">
-                                                                <h5 class="mb-0"><a href="{{url('chatify/'.$user->id)}}"><strong>@if(Auth::id()==$user->id) Me @else {{$user->name}} @endif</strong> </a></h5>
+                                                                <h5 class="mb-0"><a href="{{url('chatify/'.$user->id)}}"><strong style="font-size: 20px">@if(Auth::id()==$user->id) أنا @else {{$user->name}} @endif</strong> </a></h5>
                                                             </div>
                                                             <div class="candidate-list-title">
                                                                 <h5 class="mb-0">@if($user->role==0)مدير @elseif($user->role==1)مُعلم @elseif($user->role==2)طالب @endif</h5>
